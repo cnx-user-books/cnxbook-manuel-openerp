@@ -1,0 +1,31 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Installer PostgreSQL pour OpenERP sur Ubuntu</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38068</md:content-id>
+  <md:title>Installer PostgreSQL pour OpenERP sur Ubuntu</md:title>
+  <md:abstract>Comment installer PostgreSQL pour OpenERP sur Ubuntu</md:abstract>
+  <md:uuid>94d7c2d6-35d9-49bc-8818-ff4996f7fd2a</md:uuid>
+</metadata>
+
+<content>
+  <section id="eip-474"><title>Installation</title><para id="eip-169">
+Dans un Terminal, taper :<newline/>
+<code>
+sudo apt-get install postgresql
+</code>
+</para></section><section id="eip-927"><title>Créer un usager PostgreSQL pour OpenERP</title><para id="eip-334">Toujours dans le Terminal, connectez-vous avec l'usager postgres :<newline/>
+<code>
+sudo -s<newline/>
+su - postres
+</code>
+<newline/>
+En tant qu'usager postgres, taper :<newline/>
+<code>
+createuser openerp<newline/>
+Le nouveau rôle est-il super-utilisateur ? (o/n) o
+</code>
+</para></section>
+</content>
+
+</document>
